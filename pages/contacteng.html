@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../pages/homeeng.html">
+                <img src="../logo/logo.png" class="logo-img" alt="">                
+            </a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="../pages/homeeng.html">Home</a></li>
+            <li><a href="../pages/forecasteng.html">Forecast</a></li>
+            <li><a href="../pages/contacteng.html" class="boja">Contact</a></li>
+            <li><a href="../pages/abouteng.html">About Us</a></li>
+            <li><a href="../indexeng.html">Login</a></li>
+        </ul>
+        <div class="navbar-right">
+            <div class="navbar-search">
+                <input type="text" placeholder="Search countries and cities" id="cityInput">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.854a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <a href="../pages/contact.html">
+                    <img src="../images/srb.png" alt="Serbian" id="srpFlag" class="flag" title="Serbian">
+                    </a>
+                    <a href="../pages/contacteng.html">
+                    <img src="../images/eng.png" alt="English" id="engFlag" class="flag"  title="English"> 
+                    </a>
+                </div>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn">Pošaljite</button>
+        
+        </form>
+        <div id="successMessage" class="success-message"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Our mission is to provide you with accurate and up-to-date information about the weather conditions in your region. Enjoy accurate forecasts wherever you are.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/forecast.html">Forecast</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Forecast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/contacteng.js"></script>
+</body>
+</html>

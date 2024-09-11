@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nama</title>
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../pages/home.html">
+                <img src="../logo/logo.png" class="logo-img" alt="">                
+            </a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a href="../pages/home.html">Pocetna</a></li>
+            <li><a href="../pages/forecast.html">Prognoza</a></li>
+            <li><a href="../pages/contact.html">Kontakt</a></li>
+            <li><a href="../pages/about.html" class="boja">O Nama</a></li>
+            <li><a href="../index.html">Logovanje</a></li>
+        </ul>
+        <div class="navbar-right">
+            <div class="navbar-search">
+                <input type="text" placeholder="Pretraživanje država i gradova" id="cityInput">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.854a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+            <a href="../pages/about.html">
+                <img src="../images/srb.png" alt="Serbian" id="srpFlag" class="flag" title="Serbian">
+                </a>
+                <a href="../pages/abouteng.html">
+                <img src="../images/eng.png" alt="English" id="engFlag" class="flag"  title="English"> 
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="about-page">
+        <section class="about-map">
+            <h2>Naša Lokacija</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Drzavni%20Univerzitet%20u%20Novom%20Pazaru&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cards">
+            <h2>O Nama</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Naša Misija</h3>
+                    <p>Naša misija je da vam pružimo tačne i ažurirane informacije o vremenskim uslovima u vašem regionu, kako biste bili uvek spremni.</p>
+                </div>
+                <div class="card">
+                    <h3>Naša Vizija</h3>
+                    <p>Verujemo u svet u kojem je tačna vremenska prognoza dostupna svakome, u bilo kojem trenutku.</p>
+                </div>
+                <div class="card">
+                    <h3>Naše Vrednosti</h3>
+                    <p>Preciznost, pouzdanost i posvećenost korisnicima su osnovne vrednosti našeg tima.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>O Nama</h3>
+                <p>Naša misija je da vam pružimo tačne i ažurirane informacije o vremenskim uslovima u vašem regionu. Uživajte u tačnim prognozama gde god da se nalazite.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Korisni Linkovi</h3>
+                <ul>
+                    <li><a href="home.html">Početna</a></li>
+                    <li><a href="forecast.html">Prognoza</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">O Nama</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Pratite Nas</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Prognoza. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="../script/about.js"></script>
+</body>
+</html>
